@@ -12,9 +12,9 @@ async function fetchUserdetails(currentUserId) {
 }
 
 export default async function UserDetails({ params }) {
-  console.log(params);
-
+  
   const userDetails = await fetchUserdetails(params.details);
+  console.log(params);
   return (
     <div>
       <h1>This is user details page</h1>
